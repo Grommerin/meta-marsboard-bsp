@@ -1,0 +1,19 @@
+--- defconfig	2016-04-05 10:21:13.328948931 +0300
++++ .config_05.04_02	2016-04-05 10:31:39.000000000 +0300
+@@ -707,7 +707,6 @@
+ # CONFIG_BT is not set
+ # CONFIG_AF_RXRPC is not set
+ # CONFIG_WIRELESS is not set
+-# CONFIG_MAC80211_RC_DEFAULT_MINSTREL is not set
+ # CONFIG_WIMAX is not set
+ # CONFIG_RFKILL is not set
+ # CONFIG_RFKILL_REGULATOR is not set
+@@ -1000,7 +999,7 @@
+ # CONFIG_DUMMY is not set
+ # CONFIG_EQUALIZER is not set
+ # CONFIG_NET_FC is not set
+-CONFIG_MII=m
++# CONFIG_MII is not set
+ # CONFIG_NET_TEAM is not set
+ # CONFIG_MACVLAN is not set
+ # CONFIG_VXLAN is not set

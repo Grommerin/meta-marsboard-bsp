@@ -1,0 +1,42 @@
+--- defconfig	2016-04-05 10:33:08.971118026 +0300
++++ .config_05.04_03	2016-04-05 10:46:38.000000000 +0300
+@@ -606,7 +606,11 @@
+ # CONFIG_PACKET_DIAG is not set
+ CONFIG_UNIX=y
+ # CONFIG_UNIX_DIAG is not set
++CONFIG_XFRM=y
+ # CONFIG_XFRM_USER is not set
++# CONFIG_XFRM_SUB_POLICY is not set
++# CONFIG_XFRM_MIGRATE is not set
++# CONFIG_XFRM_STATISTICS is not set
+ # CONFIG_NET_KEY is not set
+ CONFIG_INET=y
+ # CONFIG_IP_MULTICAST is not set
+@@ -625,7 +629,7 @@
+ # CONFIG_INET_IPCOMP is not set
+ # CONFIG_INET_XFRM_TUNNEL is not set
+ # CONFIG_INET_TUNNEL is not set
+-# CONFIG_INET_XFRM_MODE_TRANSPORT is not set
++CONFIG_INET_XFRM_MODE_TRANSPORT=y
+ # CONFIG_INET_XFRM_MODE_TUNNEL is not set
+ # CONFIG_INET_XFRM_MODE_BEET is not set
+ # CONFIG_INET_LRO is not set
+@@ -645,7 +649,9 @@
+ # CONFIG_RDS is not set
+ # CONFIG_TIPC is not set
+ # CONFIG_ATM is not set
+-# CONFIG_L2TP is not set
++CONFIG_L2TP=y
++# CONFIG_L2TP_DEBUGFS is not set
++# CONFIG_L2TP_V3 is not set
+ # CONFIG_BRIDGE is not set
+ CONFIG_HAVE_NET_DSA=y
+ # CONFIG_VLAN_8021Q is not set
+@@ -1119,6 +1125,7 @@
+ # CONFIG_PPP_MPPE is not set
+ CONFIG_PPP_MULTILINK=y
+ CONFIG_PPPOE=y
++# CONFIG_PPPOL2TP is not set
+ CONFIG_PPP_ASYNC=y
+ CONFIG_PPP_SYNC_TTY=y
+ # CONFIG_SLIP is not set

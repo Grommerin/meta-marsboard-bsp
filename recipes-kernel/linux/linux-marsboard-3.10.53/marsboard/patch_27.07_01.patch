@@ -1,0 +1,64 @@
+--- defconfig	2016-04-05 11:22:49.968463946 +0300
++++ .config_27.07_01	2016-07-27 13:42:14.000000000 +0300
+@@ -863,9 +863,31 @@
+ # CONFIG_CAN_SOFTING is not set
+ # CONFIG_CAN_DEBUG_DEVICES is not set
+ # CONFIG_IRDA is not set
+-# CONFIG_BT is not set
++CONFIG_BT=y
++# CONFIG_BT_RFCOMM is not set
++# CONFIG_BT_BNEP is not set
++# CONFIG_BT_HIDP is not set
++
++#
++# Bluetooth device drivers
++#
++CONFIG_BT_HCIBTSDIO=y
++# CONFIG_BT_HCIUART is not set
++# CONFIG_BT_HCIVHCI is not set
++# CONFIG_BT_MRVL is not set
+ # CONFIG_AF_RXRPC is not set
+-# CONFIG_WIRELESS is not set
++CONFIG_WIRELESS=y
++CONFIG_CFG80211=y
++# CONFIG_NL80211_TESTMODE is not set
++# CONFIG_CFG80211_DEVELOPER_WARNINGS is not set
++# CONFIG_CFG80211_REG_DEBUG is not set
++# CONFIG_CFG80211_CERTIFICATION_ONUS is not set
++CONFIG_CFG80211_DEFAULT_PS=y
++# CONFIG_CFG80211_DEBUGFS is not set
++# CONFIG_CFG80211_INTERNAL_REGDB is not set
++# CONFIG_CFG80211_WEXT is not set
++# CONFIG_LIB80211 is not set
++# CONFIG_MAC80211 is not set
+ # CONFIG_WIMAX is not set
+ # CONFIG_RFKILL is not set
+ # CONFIG_RFKILL_REGULATOR is not set
+@@ -1282,7 +1304,16 @@
+ CONFIG_PPP_SYNC_TTY=y
+ # CONFIG_SLIP is not set
+ CONFIG_SLHC=y
+-# CONFIG_WLAN is not set
++CONFIG_WLAN=y
++# CONFIG_ATMEL is not set
++# CONFIG_PRISM54 is not set
++# CONFIG_ATH_CARDS is not set
++# CONFIG_BRCMFMAC is not set
++# CONFIG_HOSTAP is not set
++# CONFIG_IPW2100 is not set
++# CONFIG_LIBERTAS is not set
++CONFIG_WL_TI=y
++# CONFIG_MWIFIEX is not set
+ 
+ #
+ # Enable WiMAX (Networking options) to see the WiMAX drivers
+@@ -2218,6 +2249,9 @@
+ # CONFIG_ET131X is not set
+ # CONFIG_ECHO is not set
+ # CONFIG_COMEDI is not set
++# CONFIG_R8187SE is not set
++# CONFIG_RTLLIB is not set
++# CONFIG_VT6655 is not set
+ # CONFIG_DX_SEP is not set
+ 
+ #

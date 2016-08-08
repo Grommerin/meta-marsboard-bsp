@@ -1,0 +1,25 @@
+--- defconfig	2016-04-05 11:12:31.910965027 +0300
++++ .config_05.04_12	2016-04-05 11:13:58.000000000 +0300
+@@ -808,12 +808,9 @@
+ # CONFIG_L2TP is not set
+ # CONFIG_BRIDGE is not set
+ CONFIG_HAVE_NET_DSA=y
+-CONFIG_VLAN_8021Q=y
+-# CONFIG_VLAN_8021Q_GVRP is not set
+-# CONFIG_VLAN_8021Q_MVRP is not set
++# CONFIG_VLAN_8021Q is not set
+ # CONFIG_DECNET is not set
+-CONFIG_LLC=y
+-CONFIG_LLC2=y
++# CONFIG_LLC2 is not set
+ # CONFIG_IPX is not set
+ # CONFIG_ATALK is not set
+ # CONFIG_X25 is not set
+@@ -869,7 +866,6 @@
+ # CONFIG_BT is not set
+ # CONFIG_AF_RXRPC is not set
+ # CONFIG_WIRELESS is not set
+-# CONFIG_MAC80211_RC_DEFAULT_MINSTREL is not set
+ # CONFIG_WIMAX is not set
+ # CONFIG_RFKILL is not set
+ # CONFIG_RFKILL_REGULATOR is not set

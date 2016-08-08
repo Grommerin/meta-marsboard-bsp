@@ -8,6 +8,8 @@ EXTRA_IMAGE_FEATURES += " tools-testapps tools-profile"
 
 IMAGE_INSTALL_append += " htop i2c-tools"
 
+IMAGE_INSTALL_append += " canutils"
+
 IMAGE_INSTALL_append += " \
     packagegroup-fslc-gstreamer1.0 \
     packagegroup-fslc-gstreamer1.0-full \

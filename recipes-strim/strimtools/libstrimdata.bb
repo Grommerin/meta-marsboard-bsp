@@ -1,0 +1,1 @@
+/home/nikita/workspace/libstrim/strimdata/libstrimdata.bb

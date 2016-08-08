@@ -1,0 +1,24 @@
+ttyGSM2
+115200
+noauth
+modem
+defaultroute
+noipdefault
+lock
+debug
+novjccomp
+nopcomp
+nodetach
+noaccomp
+nodeflate
+novj
+nobsdcomp
+default-asyncmap
+ipcp-accept-local
+ipcp-accept-remote
+usepeerdns
+nopersist
+maxfail 2
+holdoff 0
+lcp-echo-failure 2
+lcp-echo-interval 300

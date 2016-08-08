@@ -1,0 +1,11 @@
+--- defconfig	2016-07-29 09:27:34.440665656 +0300
++++ .config_05.08_01	2016-08-05 15:08:30.232013116 +0300
+@@ -1418,7 +1418,7 @@
+ # CONFIG_LEGACY_PTYS is not set
+ # CONFIG_SERIAL_NONSTANDARD is not set
+ # CONFIG_NOZOMI is not set
+-# CONFIG_N_GSM is not set
++CONFIG_N_GSM=y
+ # CONFIG_TRACE_SINK is not set
+ # CONFIG_DEVKMEM is not set
+ 

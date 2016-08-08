@@ -1,0 +1,1 @@
+/home/nikita/workspace/canlogger/strimlog.bb

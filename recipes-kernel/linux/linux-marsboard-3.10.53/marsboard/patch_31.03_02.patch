@@ -1,0 +1,120 @@
+--- defconfig	2016-03-31 14:31:13.158411444 +0300
++++ .config_31.03_2	2016-03-31 14:39:53.000000000 +0300
+@@ -1930,77 +1930,15 @@
+ # CONFIG_TEGRA_HOST1X is not set
+ # CONFIG_VGASTATE is not set
+ # CONFIG_VIDEO_OUTPUT_CONTROL is not set
+-CONFIG_VIDEOMODE_HELPERS=y
+-CONFIG_FB=y
+-# CONFIG_FIRMWARE_EDID is not set
+-# CONFIG_FB_DDC is not set
+-# CONFIG_FB_BOOT_VESA_SUPPORT is not set
+-CONFIG_FB_CFB_FILLRECT=y
+-CONFIG_FB_CFB_COPYAREA=y
+-CONFIG_FB_CFB_IMAGEBLIT=y
+-# CONFIG_FB_CFB_REV_PIXELS_IN_BYTE is not set
+-# CONFIG_FB_SYS_FILLRECT is not set
+-# CONFIG_FB_SYS_COPYAREA is not set
+-# CONFIG_FB_SYS_IMAGEBLIT is not set
+-# CONFIG_FB_FOREIGN_ENDIAN is not set
+-# CONFIG_FB_SYS_FOPS is not set
+-# CONFIG_FB_SVGALIB is not set
+-# CONFIG_FB_MACMODES is not set
+-# CONFIG_FB_BACKLIGHT is not set
+-CONFIG_FB_MODE_HELPERS=y
+-# CONFIG_FB_TILEBLITTING is not set
+-
+-#
+-# Frame buffer hardware drivers
+-#
+-# CONFIG_FB_CIRRUS is not set
+-# CONFIG_FB_PM2 is not set
+-# CONFIG_FB_CYBER2000 is not set
+-# CONFIG_FB_ASILIANT is not set
+-# CONFIG_FB_IMSTT is not set
+-# CONFIG_FB_UVESA is not set
+-# CONFIG_FB_S1D13XXX is not set
+-# CONFIG_FB_NVIDIA is not set
+-# CONFIG_FB_RIVA is not set
+-# CONFIG_FB_I740 is not set
+-# CONFIG_FB_MATROX is not set
+-# CONFIG_FB_RADEON is not set
+-# CONFIG_FB_ATY128 is not set
+-# CONFIG_FB_ATY is not set
+-# CONFIG_FB_S3 is not set
+-# CONFIG_FB_SAVAGE is not set
+-# CONFIG_FB_SIS is not set
+-# CONFIG_FB_NEOMAGIC is not set
+-# CONFIG_FB_KYRO is not set
+-# CONFIG_FB_3DFX is not set
+-# CONFIG_FB_VOODOO1 is not set
+-# CONFIG_FB_VT8623 is not set
+-# CONFIG_FB_TRIDENT is not set
+-# CONFIG_FB_ARK is not set
+-# CONFIG_FB_PM3 is not set
+-# CONFIG_FB_CARMINE is not set
+-# CONFIG_FB_TMIO is not set
+-# CONFIG_FB_GOLDFISH is not set
+-# CONFIG_FB_VIRTUAL is not set
+-# CONFIG_FB_METRONOME is not set
+-# CONFIG_FB_MB862XX is not set
+-# CONFIG_FB_BROADSHEET is not set
+-# CONFIG_FB_AUO_K190X is not set
+-CONFIG_FB_MXS=y
+-# CONFIG_FB_SIMPLE is not set
++# CONFIG_FB is not set
+ # CONFIG_EXYNOS_VIDEO is not set
+ # CONFIG_BACKLIGHT_LCD_SUPPORT is not set
+-# CONFIG_FB_MXC is not set
+-# CONFIG_FB_MXS_SII902X is not set
+ # CONFIG_HANNSTAR_CABC is not set
+ 
+ #
+ # Console display driver support
+ #
+ CONFIG_DUMMY_CONSOLE=y
+-# CONFIG_FRAMEBUFFER_CONSOLE is not set
+-# CONFIG_LOGO is not set
+-# CONFIG_FB_SSD1307 is not set
+ # CONFIG_SOUND is not set
+ 
+ #
+@@ -2112,7 +2050,7 @@
+ #
+ # MXC Vivante GPU support
+ #
+-CONFIG_MXC_GPU_VIV=y
++# CONFIG_MXC_GPU_VIV is not set
+ CONFIG_MXC_IPU_V3=y
+ 
+ #
+@@ -2123,9 +2061,7 @@
+ #
+ # MXC VPU(Video Processing Unit) support
+ #
+-CONFIG_MXC_VPU=y
+-# CONFIG_MXC_VPU_DEBUG is not set
+-# CONFIG_MX6_VPU_352M is not set
++# CONFIG_MXC_VPU is not set
+ 
+ #
+ # MXC HDMI CEC (Consumer Electronics Control) support
+@@ -2134,7 +2070,7 @@
+ #
+ # MXC MIPI Support
+ #
+-CONFIG_MXC_MIPI_CSI2=y
++# CONFIG_MXC_MIPI_CSI2 is not set
+ 
+ #
+ # MXC Media Local Bus Driver
+@@ -2406,9 +2342,7 @@
+ #
+ # CONFIG_IIO_SIMPLE_DUMMY is not set
+ # CONFIG_ZSMALLOC is not set
+-# CONFIG_FB_SM7XX is not set
+ # CONFIG_CRYSTALHD is not set
+-# CONFIG_FB_XGI is not set
+ # CONFIG_FT1000 is not set
+ 
+ #

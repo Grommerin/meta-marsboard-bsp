@@ -1,0 +1,6 @@
+file /etc/ppp/velcom-opt
+user "vmi"
+password "vmi"
+connect "/usr/sbin/chat -v -t10 -f /etc/ppp/velcom-connect"
+disconnect "/usr/sbin/chat -V -s -S /etc/ppp/velcom-disconnect"
+

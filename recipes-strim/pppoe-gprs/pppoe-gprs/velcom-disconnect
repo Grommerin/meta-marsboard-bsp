@@ -1,0 +1,6 @@
+ABORT           'BUSY'         
+ABORT           'ERROR'        
+ABORT           'NO DIALTONE'                 
+''              '+++ATH'   
+''              'AT+CIPSHUT'
+''              'AT+CPOWD=1'

@@ -11,8 +11,12 @@ PROVIDES = "virtual/bootloader"
 PV = "mainline+git${SRCPV}"
 
 # this is 2015-06-28 shortly after tag v2015.07-rc2
-SRCREV = "7853d76b0bdab9b1a4da0bba8da6d12b5b8a303f"
-SRC_URI = "git://git.denx.de/u-boot.git;rev=${SRCREV}"
+# SRCREV = "7853d76b0bdab9b1a4da0bba8da6d12b5b8a303f"
+# SRC_URI = "git://git.denx.de/u-boot.git;rev=${SRCREV}"
+
+SRCREV = "${AUTOREV}"
+SRCBRANCH = "strim-bars3000"
+SRC_URI = "git://github.com/grommerin/u-boot-bars3000.git;branch=${SRCBRANCH}"
 
 S = "${WORKDIR}/git"
 
