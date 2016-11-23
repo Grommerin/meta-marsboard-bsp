@@ -4,13 +4,13 @@ inherit core-image
 
 EXTRA_IMAGE_FEATURES += " ssh-server-openssh tools-sdk tools-testapps tools-profile debug-tweaks"
 
-IMAGE_INSTALL_append += " packagegroup-core-boot packagegroup-core-ssh-openssh"
+IMAGE_INSTALL_append += " packagegroup-core-boot packagegroup-core-ssh-openssh samba"
 
 # packagegroup-core-full-cmdline-libs
 IMAGE_INSTALL_append += " glib-2.0"
 
 # packagegroup-core-full-cmdline-utils
-IMAGE_INSTALL_append += " bash acl attr bc coreutils cpio e2fsprogs ed file findutils gawk gmp grep makedevs mktemp ncurses net-tools pax popt procps psmisc sed tar time util-linux zlib"
+IMAGE_INSTALL_append += " bash acl attr bc coreutils cpio e2fsprogs ed file findutils gawk gmp grep makedevs mktemp ncurses net-tools pax popt procps psmisc sed tar time util-linux zlib libssl libssh2 curl"
 
 # packagegroup-core-full-cmdline-extended
 IMAGE_INSTALL_append += " iproute2 iputils iptables module-init-tools openssl"
@@ -21,7 +21,7 @@ IMAGE_INSTALL_append += " ppp ntp htop cmake db sqlite sqlite3 ethtool minicom"
 
 IMAGE_INSTALL_append += " i2c-tools ipsec-tools libevent gdb"
 
-IMAGE_INSTALL_append += " libstrimtool libstrimdata libstrimgpio"
+IMAGE_INSTALL_append += " wf111-driver cryptopp"
 
 IMAGE_INSTALL_append +=" cpufrequtils libsdl2 iperf subversion wget" 
 
