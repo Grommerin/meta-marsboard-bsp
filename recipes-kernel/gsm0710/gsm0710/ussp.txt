@@ -1,0 +1,80 @@
+
+
+ussp.txt: Userspace serial ports. 
+
+Introduction
+------------
+
+This driver allows serial port drivers to be written in userspace.
+This will probably incur a bit over overhead, but I don't expect it to
+be unusable. In fact, intelligent cards like "sx" already hold up
+characters upto 20 ms before reporting them to the OS. It must be very
+well possible to handle things faster than that.
+
+This driver was written to allow access to the perle RAS server 
+products. It can easily be driven using a userspace deamon, while
+interfacing with the kernel internals on the network level would be
+harder.
+
+
+Technical details
+-----------------
+
+The deamon opens the ussp_master device. It then uses the
+USSP_SET_PORT ioctl to associate the filedescriptor with a port.  From
+that moment onward, the device is a "pipe" that transfers data between
+the serial port and the kernel driver.
+
+
+struct operation {
+	enum op;
+	unsigned long len;	
+	unsigned long arg;
+	unsigned char data[];
+	};
+
+
+Write: (kernel -> Userspace)
+	op  = USSP_WRITE;
+	len = length of data.
+	data[]  holds the data. 
+
+Read: (Userspace -> kernel)
+	op  = USSP_READ;
+	len = length of data.
+	data[]  holds the data. 
+
+set_termios: (kernel -> userspace)
+	op  = USSP_SET_TERMIOS;
+	len = size of termios structure. 
+               (userspace can return error on unsupported sizes).
+	data[] Termios structure. 
+
+modem_signal_change: (bidirectional)
+	/* Either side ignores the bits that are not setable */
+	op = USSP_MSC;
+	len = 0;
+	arg = the logical OR of:
+              DCD 0x01 
+              RI  0x02
+              RTS 0x04
+              CTS 0x08
+              DTR 0x10
+              DSR 0x20
+
+open: (kernel -> userspace)
+	op = USSP_OPEN;
+	len = 0;
+	arg = open flags;
+
+open_ok: (userspace -> kernel)
+	op = USSP_OPEN_RESULT;
+	len = 0l
+	arg = result code (0 = OK, other = Errno);
+
+close: (kernel -> userspace)
+	op = USSP_CLOSE;
+	len = 0;
+
+
+

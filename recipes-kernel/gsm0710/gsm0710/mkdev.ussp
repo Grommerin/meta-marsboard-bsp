@@ -1,0 +1,17 @@
+#!/bin/sh
+# Script to create device nodes for USSP
+
+
+if [ ! -c /dev/ussp_ctl ]; then
+	mknod -m 666 /dev/ussp_ctl c 10 189
+fi
+
+
+C=0;
+
+while [ $C -lt 4 ]; do
+	if [ ! -c /dev/ttyU$C ]; then
+		mknod -m 666 /dev/ttyU$C c 208 $C
+	fi
+	C=`expr $C + 1`
+done
